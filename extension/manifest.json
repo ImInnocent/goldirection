@@ -1,0 +1,15 @@
+{
+  "name": "Goldirection",
+  "description": "Redirect your URL",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "128": "icon128.png",
+    "192": "icon192.png"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["storage", "declarativeNetRequest"],
+  "host_permissions": ["<all_urls>"]
+}

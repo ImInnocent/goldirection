@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>Goldyrection</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="container">
+      <div id="title-container">
+        <image src="/goldfish.png" width="40" height="40" />
+        <div id="title">Goldirection</div>
+      </div>
+      <div id="toggle">
+        <label>
+          <input id="active" role="switch" type="checkbox" />
+        </label>
+      </div>
+      <div id="content">
+        <span>Original URL</span>
+        <input id="original" type="text" />
+        <span>Redirect할 URL</span>
+        <div id="destination-content">
+          <select name="scheme" id="scheme">
+            <option value="http">http</option>
+            <option value="https">https</option>
+          </select>
+          <input id="destination" type="text" placeholder="host" />
+          <input id="port" type="number" placeholder="port" />
+          <input id="path" type="text" placeholder="path" />
+        </div>
+        <button id="submit">적용하기</button>
+      </div>
+      <div id="footer">Made by Goldy</div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
